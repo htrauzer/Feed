@@ -38,3 +38,7 @@ Docker installed on your machine.
 *    ├── js/         - Client-side logic and interactivity.
 *    └── templates/  - HTML files   
      
+
+* **Backend:** `main.go`, `handlers.go`, `utils.go`
+* **Data:** `database/`, `models/`, `sqlite.db`
+* **Frontend:** `templates/`, `static/ (js/css)`
