@@ -3,8 +3,8 @@ A full-stack web forum built with **Go (Golang)**, featuring real-time data pers
 
 ### 🖼️ Preview
 | Home Page | Post View |
-| :---: | :---: |
-| ![Home](screenshots/photo_0.png) | ![Post](screenshots/photo_2.png) | ![Login](screenshots/photo_1.png) |![New Post](screenshots/photo_3.png) |
+| :---: | :---: | :---: | :---: |
+| ![Home](screenshots/photo_0.png) | ![Post](screenshots/photo_2.png) | ![Login](screenshots/photo_1.png) | ![New Post](screenshots/photo_3.png) |
 
 ## 🚀 Features
 ```
