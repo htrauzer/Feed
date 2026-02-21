@@ -2,7 +2,7 @@
 A full-stack web forum built with **Go (Golang)**, featuring real-time data persistence with **SQLite** and containerized deployment via **Docker**. This project allows users to share posts, categorize discussions, and interact through likes and comments.
 
 ### 🖼️ Preview
-| Home Page | Post View |
+| Home Page | Post View | Post View | Post View |
 | :---: | :---: | :---: | :---: |
 | ![Home](screenshots/photo_0.png) | ![Post](screenshots/photo_2.png) | ![Login](screenshots/photo_1.png) | ![New Post](screenshots/photo_3.png) |
 
