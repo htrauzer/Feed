@@ -15,7 +15,7 @@ Users can dive into specific threads to leave comments and interact using the Li
 
 ---
 
-### ✍️ Login
+### 🖼️ Login
 Simple and easy way to login or register. 
 ![Create Post](screenshots/photo_1.jpg)
 
