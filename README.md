@@ -27,21 +27,14 @@ Docker installed on your machine.
 3. Access the Forum: open your browser and navigate to http://localhost:8080.
 
 ## 📂 Project Structure
-   
-* main.go            - Entry point and server initialization.
-* handlers.go        - Route handlers and HTTP request logic.
-* database/          - SQL queries and database connection management.
-* models/            - Struct definitions for Users, Posts, and Comments.
-* utils.go           - Helper functions (Session checks, validations).
-* static/            - Frontend assets:
-*    ├── css/        - Stylesheets for layout and design.
-*    ├── js/         - Client-side logic and interactivity.
-*    └── templates/  - HTML files   
-     
 ```text
-.
-  ├── database/     # Database initialization and queries
-  ├── models/       # Data structures (User, Post, etc.)
-  ├── static/       # CSS and JavaScript files
-  ├── templates/    # HTML files
-  └── main.go       # Server entry point```
+
+main.go            - Entry point and server initialization.
+handlers.go        - Route handlers and HTTP request logic.
+database/          - SQL queries and database connection management.
+models/            - Struct definitions for Users, Posts, and Comments.
+utils.go           - Helper functions (Session checks, validations).
+static/            - Frontend assets:
+   ├── css/        - Stylesheets for layout and design.
+   ├── js/         - Client-side logic and interactivity.
+   └── templates/  - HTML files ```
