@@ -1,15 +1,10 @@
 # 🏛️ Go Feed Project
 A full-stack web forum built with **Go (Golang)**, featuring real-time data persistence with **SQLite** and containerized deployment via **Docker**. This project allows users to share posts, categorize discussions, and interact through likes and comments.
 
-### 🖼️ Preview
-| Home Page | Post View | Login | New Post |
-| :---: | :---: | :---: | :---: |
-| ![Home](screenshots/photo_0.jpg) | ![Post](screenshots/photo_2.jpg) | ![Login](screenshots/photo_1.jpg) | ![New Post](screenshots/photo_3.jpg) |
-
 ## 📸 Interface Preview
 
 ### 🏠 Home Dashboard
-The main hub where all "pretty" posts are displayed. It features dynamic filtering by category and real-time updates.
+The main hub where all posts are displayed. It features dynamic filtering by category and real-time updates.
 ![Home Page](screenshots/photo_0.jpg)
 
 ---
@@ -20,9 +15,15 @@ Users can dive into specific threads to leave comments and interact using the Li
 
 ---
 
+### ✍️ Login
+Simple and easy way to login or register. 
+![Create Post](screenshots/photo_1.jpg)
+
+---
+
 ### ✍️ Content Creation
 A clean, intuitive interface for creating new discussions.
-![Create Post](screenshots/photo_1.jpg)
+![Create Post](screenshots/photo_3.jpg)
 
 ## 🚀 Features
 ```
