@@ -1,12 +1,12 @@
 # 🏛️ Go Feed Project
-$A full-stack web forum built with **Go (Golang)**, featuring real-time data persistence with **SQLite** and containerized deployment via **Docker**. This project allows users to share posts, categorize discussions, and interact through likes and comments.$
+A full-stack web forum built with **Go (Golang)**, featuring real-time data persistence with **SQLite** and containerized deployment via **Docker**. This project allows users to share posts, categorize discussions, and interact through likes and comments.
 
 ## 🚀 Features
->     User Authentication: Secure registration and login using bcrypt password hashing.
->     Persistent Storage: Data is stored in an SQLite database that survives container restarts.
->     Interactive Content: Users can create posts, leave comments, and react (Like/Dislike).
->     Clean Architecture: Separation of concerns between Handlers, Database logic, and Utils.
->     Containerized: Fully Dockerized for easy setup and deployment.
+* User Authentication: Secure registration and login using bcrypt password hashing.
+* Persistent Storage: Data is stored in an SQLite database that survives container restarts.
+* Interactive Content: Users can create posts, leave comments, and react (Like/Dislike).
+* Clean Architecture: Separation of concerns between Handlers, Database logic, and Utils.
+* Containerized: Fully Dockerized for easy setup and deployment.
 
 ## 🛠️ Tech Stack
 * Backend: Go (Golang)
@@ -17,7 +17,7 @@ $A full-stack web forum built with **Go (Golang)**, featuring real-time data per
 
 ## 📦 Getting Started
 ### Prerequisites
-    Docker installed on your machine.
+Docker installed on your machine.
 
 ### Installation & Running
     
@@ -35,7 +35,7 @@ Open your browser and navigate to http://localhost:8080.
 * models/           - Struct definitions for Users, Posts, and Comments.
 * utils.go          - Helper functions (Session checks, validations).
 * static/           - Frontend assets:
-    ├── css/        - Stylesheets for layout and design.
-    ├── js/         - Client-side logic and interactivity.
-    └── templates/  - HTML files   
+*    ├── css/        - Stylesheets for layout and design.
+*    ├── js/         - Client-side logic and interactivity.
+*    └── templates/  - HTML files   
      
