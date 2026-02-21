@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
-
+    _ "github.com/mattn/go-sqlite3"
 )
 
 var (
