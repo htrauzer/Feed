@@ -6,6 +6,24 @@ A full-stack web forum built with **Go (Golang)**, featuring real-time data pers
 | :---: | :---: | :---: | :---: |
 | ![Home](screenshots/photo_0.jpg) | ![Post](screenshots/photo_2.jpg) | ![Login](screenshots/photo_1.jpg) | ![New Post](screenshots/photo_3.jpg) |
 
+## 📸 Interface Preview
+
+### 🏠 Home Dashboard
+The main hub where all "pretty" posts are displayed. It features dynamic filtering by category and real-time updates.
+![Home Page](screenshots/photo_0.jpg)
+
+---
+
+### 💬 Discussion & Interactions
+Users can dive into specific threads to leave comments and interact using the Like/Dislike system.
+![Post View](screenshots/photo_2.jpg)
+
+---
+
+### ✍️ Content Creation
+A clean, intuitive interface for creating new discussions.
+![Create Post](screenshots/photo_1.jpg)
+
 ## 🚀 Features
 ```
 User Authentication:    Secure registration and login using bcrypt password hashing.
