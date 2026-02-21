@@ -1,0 +1,28 @@
+{{ define "posts-filters" }}
+<form name="posts_filter" method="GET" onsubmit="filterPosts()">
+  
+  <div>
+    <div class="me-4 col-lg-12">
+      <label>Filter by</label>
+      <select id="filter_categories" class="categories-selection-multiple">
+        <option value="all">All posts</option>
+        <option value="general">General</option>
+        <option value="topic-1">Topic-1</option>
+        <option value="topic-2">Topic-2</option>
+        <option value="topic-3">Topic-3</option>
+        <option value="topic-4">Topic-4</option>
+        {{ if .Id }}
+        <option value="my-likes">My likes</option>
+        <option value="my-posts">My posts</option>
+        <option value="my-dislikes">My dislikes</option>
+        {{ end }}
+      </select>
+    </div>
+    <div class="d-flex flex-row justify-content-end mt-2">
+      <button type="submit" class="btn btn-dark col-lg-3" type="submit">
+        Filter
+      </button>
+    </div>
+  </div>
+</form>
+{{ end }}

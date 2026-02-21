@@ -1,0 +1,38 @@
+ 
+
+.btn-transparent{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 900px !important;
+    margin-bottom: 100px;
+}
+
+.pekisaag{
+    margin-top: 20px;
+
+}
+
+
+
+.card {
+    margin-top: 20px;
+}
+
+
+
+.commentcard {
+    margin: 20px 20px;
+}
+
+
+.select2-container {
+    width: 100% !important;
+}
+
+

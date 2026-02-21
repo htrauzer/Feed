@@ -1,0 +1,44 @@
+{{ define "navbar" }}
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      
+       
+    
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="btn btn-dark" href="/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+        title="Back to all posts">
+        <span class="btn btn-dark">Back</span>
+      </a>
+          </li>
+        
+          </li>
+        </ul>
+        <form class="d-flex">
+            {{ if .UserName }}
+            <a href="/posts/new" class="btn btn-dark me-2">New post</a>
+            <a href="/logout" class="btn btn-dark me-2" data-toggle="modal" data-target="#loginModal"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout">
+                <span class=".btn-primary">Logout [ {{ .UserName }} ]</span>
+                  
+                
+                    
+                
+                
+            </a>
+            {{end }}
+
+            {{ if not .UserName }}
+            <a href="/login" class="btn btn-dark me-2" data-toggle="modal" data-target="#registerModal">
+                Login
+            </a>
+            <a href="/signup" class="btn btn-dark me-2" data-toggle="modal" data-target="#registerModal">
+                Register
+            </a>
+            {{ end }}
+        </form>
+      
+    </div>
+  </nav>
+{{ end }} 
+

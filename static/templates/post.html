@@ -1,0 +1,96 @@
+{{ template "head" }} 
+{{$postid := .post.Id}} 
+{{ template "navbar" .user }}
+
+<body>
+  
+  <div class="container container-forum">
+    <div class="card">
+      <div class="card-body">
+        <div class="card-title">
+          <h3>{{.post.Title}}</h3>
+        </div>
+        <div class="card-subtitle text-muted">
+          <small
+            >By {{.post.UserName}} | {{.post.CreationTime}} | Comments:
+            {{.post.NumComments}}</small
+          >
+        </div>
+        <div class="card-text">
+          <br />
+          {{.post.Content}}
+        </div>
+        <div class="d-flex flex-row commentcard">
+          <form action="/reactpost" method="POST">
+            <input type="hidden" name="postId" value="{{$postid}}">
+            <input type="hidden" name="single" value="true">
+            <input type="hidden" name="likestatus" value="1">
+            <button class="btn-transparent"  type="submit" href="/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="Like">
+              <p>&#128578;<span>{{ .post.Likes }}</span></p>
+            </button>
+          </form>
+          <form action="/reactpost" method="POST">
+            <input type="hidden" name="postId" value="{{$postid}}">
+            <input type="hidden" name="single" value="true">
+            <input type="hidden" name="likestatus" value="2">
+            <button class="btn-transparent" type="submit" href="/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Dislike">
+               <p>&#x1F641;<span>{{ .post.Dislikes }}</span></p>
+           </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    {{range .post.Comments}}
+    <div class="card">
+      <div class="commentcard">
+        <p><b>By: {{ .Author }}</b></p>
+        <p>{{ .Content }}</p>
+
+        <div class="d-flex flex-row">
+          <form action="/reactcomment" name="commentlike" method="POST">
+            <input type="hidden" name="commentId" value="{{.Id}}">
+            <input type="hidden" name="postId" value="{{$postid}}">
+            <input type="hidden" name="single" value="true">
+            <input type="hidden" name="likestatus" value="1">
+            <button class="btn-transparent" type="submit" href="/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="Like">
+              <p>&#128578;<span>{{ .Likes }}</span></p>
+            </button>
+          </form>
+
+          <form action="/reactcomment" name="commentlike" method="POST">
+            <input type="hidden" name="commentId" value="{{.Id}}">
+            <input type="hidden" name="postId" value="{{$postid}}">
+            <input type="hidden" name="single" value="true">
+            <input type="hidden" name="likestatus" value="2">
+            <button class="btn-transparent" type="submit" href="/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="Dislike">
+              <p>&#x1F641;<span>{{ .Dislikes }}</span></p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{end}}
+    {{if .IsLoggedIn}}
+    <div class="card">
+      <div class="commentcard">
+        <form action="/comments" method="POST">
+          <div>
+            <textarea class="form-control" rows="3" name="commentContent" required></textarea>
+          </div>
+          <input type="hidden" name="postId" value="{{$postid}}" />
+          <input type="hidden" name="single" value="true" />
+          <div class="d-flex flex-row justify-content-end mt-2">
+            <button type="submit" class="btn btn-dark pekisaag" placeholder="Comment">Comment</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+    {{end}}
+  </div>
+</body>

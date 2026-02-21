@@ -1,0 +1,33 @@
+{{ template "head"}}
+<body>
+    {{ template "navbar" .user }}
+    <div class="container container mt-4">
+    
+        <div class="mb-4">
+            {{ template "posts-filters" .user }}
+        </div>
+        {{ range .posts }}
+    <div class="card mb-2">
+        <div class="card-body p-0">
+            <div class="d-flex flex-row commentcard">
+                <a href="http://localhost:8080/posts/{{.Id}}" class="btn-transparent border-start w-100">
+                        <div class="card-title">
+                            <h5 class="me-2">{{ .Title }}</h5> 
+                        </div>
+                        <div class="card-subtitle">
+                            <small>Author: {{ .UserName }} | {{.CreationTime}} <span href="/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Comments">&#x270D;{{.NumComments}}   </span><span href="/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Likes">&#128578;{{ .Likes }}   </span><span href="/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Dislikes">&#x1F641;{{ .Dislikes }}</span></small>
+                        </div>
+                            
+                        
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    </div>
+</body>
+</html>

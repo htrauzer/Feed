@@ -1,0 +1,44 @@
+{{ template "head" }}
+{{ template "navbar" .user }}
+
+<body>
+  
+    <div class="d-flex flex-row justify-content-center">
+        <div class="card" style="width: 30rem;">
+            <h1 class="card-header">Sign-up</h1>
+            <div class="card-body">
+                <form action="/signup" method="post">
+                    <div class="mb-3 row">
+                        <label for="email" class="col-sm-3 col-form-label">E-mail*</label>
+                        <div class="col-sm-9">
+                            <input id="email" type="text" name="email" placeholder="Email" value="{{.Email}}" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="username" class="col-sm-3 col-form-label">Username*</label>
+                        <div class="col-sm-9">
+                            <input id="username" type="text" name="username" placeholder="Username"
+                                pattern="^[a-zA-Z0-9_-]{3,16}"
+                                oninvalid="alert('Only alphanumerical characters + dash, length 3-16')"
+                                value="{{.Username}}" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="password" class="col-sm-3 col-form-label">Password*</label>
+                        <div class="col-sm-9">
+                            <input id="password" type="password" name="password" placeholder="Password" minlength="3"
+                                maxlength="50" value="{{.Password}}" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-dark" placeholder="Submit">Submit</button>
+                </form>
+            </div>
+            {{.InvalidEmail}}
+            {{.NoSignUpReason}}
+        </div>
+    </div>
+
+</body>
+
+</html>
