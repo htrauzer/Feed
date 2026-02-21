@@ -17,19 +17,19 @@ A full-stack web forum built with **Go (Golang)**, featuring real-time data pers
 
 ## 📦 Getting Started
 ### Prerequisites
+$$
 Docker installed on your machine.
+$$
 
 ### Installation & Running
     
 1. Clone the repository:
-2. Build the Docker image: `bash build.sh`
+2. Build the Docker image: ```bash build.sh```
 3. Access the Forum: open your browser and navigate to http://localhost:8080.
 
 ## 📂 Project Structure
    
-* main.go            $$
-- Entry point and server initialization.
-$$
+* main.go            - Entry point and server initialization.
 * handlers.go        - Route handlers and HTTP request logic.
 * database/          - SQL queries and database connection management.
 * models/            - Struct definitions for Users, Posts, and Comments.
