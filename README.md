@@ -4,7 +4,7 @@ A full-stack web forum built with **Go (Golang)**, featuring real-time data pers
 ### 🖼️ Preview
 | Home Page | Post View | Post View | Post View |
 | :---: | :---: | :---: | :---: |
-| ![Home](screenshots/photo_0.png) | ![Post](screenshots/photo_2.png) | ![Login](screenshots/photo_1.png) | ![New Post](screenshots/photo_3.png) |
+| ![Home](screenshots/photo_0.jpg) | ![Post](screenshots/photo_2.jpg) | ![Login](screenshots/photo_1.jpg) | ![New Post](screenshots/photo_3.jpg) |
 
 ## 🚀 Features
 ```
