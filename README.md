@@ -22,20 +22,18 @@ Docker installed on your machine.
 ### Installation & Running
     
 1. Clone the repository:
-2. Build the Docker image:
-    `bash build.sh`
-3. Access the Forum
-Open your browser and navigate to http://localhost:8080.
+2. Build the Docker image: `bash build.sh`
+3. Access the Forum: **open your browser and navigate to http://localhost:8080.**
 
 ## 📂 Project Structure
    
-* main.go           - Entry point and server initialization.
-* handlers.go       - Route handlers and HTTP request logic.
-* database/         - SQL queries and database connection management.
-* models/           - Struct definitions for Users, Posts, and Comments.
-* utils.go          - Helper functions (Session checks, validations).
-* static/           - Frontend assets:
-*    ├── css/        - Stylesheets for layout and design.
-*    ├── js/         - Client-side logic and interactivity.
-*    └── templates/  - HTML files   
+> * main.go           - Entry point and server initialization.
+> * handlers.go       - Route handlers and HTTP request logic.
+> * database/         - SQL queries and database connection management.
+> * models/           - Struct definitions for Users, Posts, and Comments.
+> * utils.go          - Helper functions (Session checks, validations).
+> * static/           - Frontend assets:
+> *    ├── css/        - Stylesheets for layout and design.
+> *    ├── js/         - Client-side logic and interactivity.
+> *    └── templates/  - HTML files   
      
