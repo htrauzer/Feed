@@ -3,11 +3,11 @@ A full-stack web forum built with **Go (Golang)**, featuring real-time data pers
 
 ## 🚀 Features
 
-###### User Authentication:  ```Secure registration and login using bcrypt password hashing.```
-###### Persistent Storage:   ```Data is stored in an SQLite database that survives container restarts.```
-###### Interactive Content:  ```Users can create posts, leave comments, and react (Like/Dislike).```
-###### Clean Architecture:   ```Separation of concerns between Handlers, Database logic, and Utils.```
-###### Containerized:        ```Fully Dockerized for easy setup and deployment.```
+User Authentication:  ```Secure registration and login using bcrypt password hashing.
+Persistent Storage:   ```Data is stored in an SQLite database that survives container restarts.
+Interactive Content:  ```Users can create posts, leave comments, and react (Like/Dislike).
+Clean Architecture:   ```Separation of concerns between Handlers, Database logic, and Utils.
+Containerized:        ```Fully Dockerized for easy setup and deployment.
 
 
 ## 🛠️ Tech Stack
